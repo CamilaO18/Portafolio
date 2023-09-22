@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px  0;
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(136, 22, 217, 0.583) 0%, rgba(17, 19, 151, 0.572) 100%),  url(img/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.head{
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+.hamburguer{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background-color: rgb(61, 120, 230);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.menu-navegacion {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(107, 167, 73, 0.583) 0%, rgba(235, 120, 44, 0.572) 100%),  url(img/portada.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: trasform .3s ease-in- otd;
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(192, 28, 28, 0.5);
+}
+
+.spread{
+    transform: translate(0);
+}
+
+.menu-navegacion{
+    color: #fff;
+    text-decoration: none;
+}
+
+.titulo{
+    font-family: 80px;
+    margin-bottom: 15px;
+}
+.copy{
+    font-weight: 500%;
+    font-size: 30px;
+}
+
+
+/* Nuestro servicio*/
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: rgb(113, 89, 247);
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-servicio img{
+    width: 40%;
+}
+
+.checklist-servicio{
+    width: 45%;
+}
+
+.service{
+    margin-bottom: 20px;
+}
+
+.n-service{
+    margin-bottom: 7px;
+    color: gold;
+}
+
+.number{
+    display: inline-block;
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    width: 30px;
+    height: 30px;
+    color:#fff;
+    text-align: center;
+    border-radius:50px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 5px;
+}
+
+.gallery{
+    background: #f2f2f2;
+}
+
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.img-galeria{
+    width: 30%;
+    height: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 5);
+    cursor: pointer;
+}
+
+
+.agregar-imagen{
+    object-fit: cover;
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: transform .3s .2s;
+}
+
+.showImage{
+    transform: scale(1);
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.experts{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cont-expert{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cont-expert img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.n-expert{
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 400;
+}
+
+/*  Footer */
+
+footer{
+    background-color: mediumpurple;
+    padding-bottom: 0.1px;
+
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   flex-wrap: wrap;
+   padding-top: 60px;
+   padding-bottom: 40px;
+}
+
+.contact-us{
+    width: 40%;
+    color: #fff;
+}
+
+.brand{
+    font-weight: 500%;
+    font-size: 40px;
+}
+
+.brand+p{
+    font-weight: 500;
+}
+
+.social-media{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius:  80%;
+    text-align: center;
+    color: #fff
+}
+
+.social-media-icon:hover{
+    background: #fff;
+    color: rgb(113, 89, 247);
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
